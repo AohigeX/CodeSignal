@@ -21,11 +21,27 @@ public class CenturyTest {
 	
 	@Test
 	public void test2() {
-		assertEquals(1, obj.centuryFromYear(100));
+		assertEquals(17, obj.centuryFromYear(1700));
 	}
 	
 	@Test
 	public void test3() {
-		assertEquals(6, obj.centuryFromYear(501));
+		assertEquals(20, obj.centuryFromYear(1988));
 	}
+	
+	@Test
+	public void test4() {
+		assertEquals(21, obj.centuryFromYear(2001));
+	}
+	
+	@Test
+	public void test5() {
+		assertEquals(2, obj.centuryFromYear(200));
+	}
+	
+	@Test
+	public void test6() {
+		assertEquals(3, obj.centuryFromYear(201));
+	}
+	
 }
